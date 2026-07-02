@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello World</title>
+    <meta
+      name="description"
+      content="A simple static hello world page ready for GitHub Pages."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4efe7;
+        --panel: rgba(255, 255, 255, 0.72);
+        --text: #1f2328;
+        --muted: #5c6470;
+        --accent: #0f766e;
+        --shadow: 0 24px 80px rgba(15, 23, 42, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+        font-family: Georgia, "Times New Roman", serif;
+        background:
+          radial-gradient(circle at top left, rgba(15, 118, 110, 0.18), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(217, 119, 6, 0.16), transparent 32%),
+          linear-gradient(180deg, #fbf8f2 0%, var(--bg) 100%);
+        color: var(--text);
+        padding: 24px;
+      }
+
+      main {
+        width: min(720px, 100%);
+        padding: clamp(32px, 5vw, 56px);
+        border: 1px solid rgba(31, 35, 40, 0.08);
+        border-radius: 28px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(14px);
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        font: 600 0.78rem/1.2 system-ui, sans-serif;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(3rem, 10vw, 6rem);
+        line-height: 0.95;
+        letter-spacing: -0.06em;
+      }
+
+      p {
+        margin: 20px 0 0;
+        max-width: 42rem;
+        font: 400 clamp(1.05rem, 2vw, 1.2rem)/1.7 system-ui, sans-serif;
+        color: var(--muted);
+      }
+
+      .chip {
+        display: inline-block;
+        margin-top: 28px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(15, 118, 110, 0.1);
+        color: var(--accent);
+        font: 600 0.92rem/1 system-ui, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">GitHub Pages</p>
+      <h1>Hello, world.</h1>
+      <p>
+        This page is live-ready: a single static HTML file with no build step.
+        It can be published directly from a GitHub repository.
+      </p>
+      <div class="chip">OpenClaw test page</div>
+    </main>
+  </body>
+</html>
